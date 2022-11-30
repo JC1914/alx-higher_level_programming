@@ -18,4 +18,3 @@ Rectangle.prototype.print = function () {
 };
 
 module.exports = Rectangle;
-
