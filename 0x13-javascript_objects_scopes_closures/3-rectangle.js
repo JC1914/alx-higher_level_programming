@@ -1,18 +1,25 @@
 #!/usr/bin/node
-// JS script to define a class, creates an instance method to print rectangle
+/* Write a class Rectangle that defines a rectangle */
 class Rectangle {
   constructor (w, h) {
-    if (w <= 0 || h <= 0 || w === undefined || h === undefined) {
-      return this;
-    } else {
+    /* If w or h is equal to 0 or not a positive integer, create an empty object */
+    if (parseInt(w) > 0 && parseInt(h) > 0) {
       this.width = w;
       this.height = h;
     }
   }
-  print () {
-    for (let count = 0; count < this.height; count++) {
-      console.log('X'.repeat(this.width));
-    }
-  }
 }
+
+/* Create an instance method called print() that prints the rectangle using the character X */
+Rectangle.prototype.print = function () {
+  for (let i = 0; i < this.height; i++) {
+    console.log('X'.repeat(this.width));
+  }
+};
+
 module.exports = Rectangle;
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
