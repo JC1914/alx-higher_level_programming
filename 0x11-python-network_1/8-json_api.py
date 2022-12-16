@@ -11,7 +11,7 @@ if __name__ == "__main__":
     try:
         json = request.json()
         if json:
-            print("[{}] {}".format(json.get("id"), json.get("name")))
+            print("[<>] {}".format(json.get("id"), json.get("name")))
         else:
             print("No result")
     except:
