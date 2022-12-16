@@ -16,7 +16,7 @@ def searchapi():
     try:
         data = result.json()
         if data:
-            print("[{}] {}".format(data["id"], data["name"]))
+            print("[<>] {}".format(data["id"], data["name"]))
         else:
             print("No result")
     except:
